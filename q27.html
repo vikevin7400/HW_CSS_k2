@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>q27</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+
+            perspective: 800px;
+
+        }
+
+
+        .card {
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px gray;
+
+            
+
+        }
+
+        .card:hover {
+
+            background-color: lightblue;
+
+            box-shadow: 15px 15px 30px black;
+           transition: transform 5s ease;
+           transform: perspective(60px)rotateY(360deg);
+                        
+             
+                        
+            
+
+        }
+
+
+        h1 {
+            font-size: 30px;
+        }
+
+
+        p {
+            font-size: 18px;
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+ 
+
+    <div class="container">
+
+        <div class="card">
+            <h1>3D Card</h1>
+            <p>
+                 2D and 3D transforms.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

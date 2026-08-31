@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>q25</title>
+
+    <style>
+        
+        body {
+            margin: 0;
+            background-color: white;
+            color: black;
+            
+        }
+
+        nav {
+            background-color: blueviolet;
+            padding: 20px;
+            /* width: 111%; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        
+
+        .hero {
+            
+            
+            background-image: url("https://images.unsplash.com/vector-1786463081930-d5f480156880?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            
+            height: 500px;
+            background-size: cover;
+             background-position: center;
+  
+             display: flex;
+              justify-content: center; 
+              align-items: center; 
+            
+
+
+            
+        }
+
+        .hero-content {
+  
+             background-color: rgba(0, 0, 0, 0.6);
+              color: white;
+              text-align: center;
+              padding: 30px;
+              width: 60%;
+}
+
+        .hero-content h1 {
+            font-size: 45px;
+            font-weight: bold;
+            font-family: Georgia, serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: whitesmoke;
+        }
+
+        .hero-content p {
+            font-size: 24px;
+            color: whitesmoke;
+        }
+
+        .hero-content button {
+            background-color: orange;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+            
+        }
+
+        .about {
+            background-color: gray;
+            padding: 40px;
+            margin: 20px;
+            text-align: center;
+            
+        }
+
+        .about h2 {
+            font-size: 35px;
+            text-transform: uppercase;
+             color: whitesmoke;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: whitesmoke;
+        }
+        .destinations {
+            padding: 30px;
+            text-align: center;
+            
+        
+        }
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: cornsilk;
+
+            width: 250px;
+
+            padding: 20px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 5px 5px 10px gray;
+        }
+         .card h3 {
+            color: blueviolet;
+            font-size: 25px;
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                background-color: lightblue;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero {
+                height: 600px;
+                background-image: url("https://images.unsplash.com/photo-1690321607902-2799a1e8eaaa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            }
+
+            .hero-content {
+                width: 75%;
+                padding: 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 30px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+            .card-container {
+                flex-direction: column;
+            }
+
+            .about {
+                margin: 10px;
+                padding: 20px;
+            }
+        }
+
+        @media (orientation: landscape) and (max-height: 500px) {
+
+            .hero {
+                height: 350px;
+            }
+
+            .hero-content {
+                padding: 15px;
+            }
+
+            .hero-content h1 {
+                font-size: 25px;
+            }
+
+        }
+          @media (orientation: portrait) {
+
+            .hero {
+                background-position: center;
+            }
+
+        }
+
+        @media (prefers-color-scheme: dark) {
+
+            body {
+                background-color: #121212;
+                color: white;
+            }
+
+            .about {
+                background-color: #333;
+            }
+
+            .card {
+                background-color: #222;
+                color: white;
+
+                border-color: white;
+            }
+
+            .card h3 {
+                color: orange;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+   
+
+    <nav>
+
+        <a href="">Home</a>
+        <a href="">Destinations</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+
+    </nav>
+
+
+    
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Explore The World</h1>
+
+            <p>
+                Discover beautiful destinations and create
+                unforgettable travel experiences.
+            </p>
+
+            <button>Explore Now</button>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="about">
+
+        <h2>About Travel</h2>
+
+        <p>
+            Explore amazing destinations around the world.
+            Discover new cultures, beautiful landscapes,
+            and unforgettable experiences.
+        </p>
+
+    </section>
+
+
+
+
+    <section class="destinations">
+
+        <h2>Popular Destinations</h2>
+
+
+        <div class="card-container">
+
+
+            <div class="card">
+
+                <h3>Kyoto</h3>
+
+                <p>
+                    Explore beautiful temples, gardens,
+                    and traditional Japanese culture.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Paris</h3>
+
+                <p>
+                    Discover famous landmarks, art,
+                    culture, and beautiful streets.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Maldives</h3>
+
+                <p>
+                    Relax on beautiful beaches and enjoy
+                    crystal clear ocean views.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+</body>
+</html>

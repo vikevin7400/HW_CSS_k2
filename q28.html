@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>q28</title>
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            margin: 0%;
+            padding: 40px;
+            background: linear-gradient(
+                120deg,
+                lightblue,
+                rgb(107, 107, 255),
+                rgb(255, 107, 255),
+                rgb(252, 71, 71),
+                yellow,
+                rgb(130, 255, 130)
+            );
+
+            background-size: 400% 900%;
+            animation: gd 5s ease infinite;
+        }
+
+        @keyframes gd {
+
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+        }
+
+        .cont {
+            width: 100%;
+            
+        }
+
+        .cont:hover {
+            transition: 0.5s ease;
+            transform:translateY(10px);
+                transform:scale(1.02);
+                transform:skew(1deg);
+        }
+
+
+        table {
+            box-shadow: 8px 8px 20px black;
+            max-width: 500px;
+            width: 100%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+            
+        }
+
+        table:hover {
+            transition: 0.5s ease;
+            transform: scale(1.02);
+            box-shadow: 15px 15px 30px black;
+        }
+
+
+
+        td {
+            padding: 15px;
+            transition: 0.5s ease;
+        }
+
+        td:first-child::before {
+            content: "👤 ";
+        }
+
+        tr:nth-child(even) {
+            background-color: aliceblue;
+        }
+
+        tr:nth-child(odd) {
+            background-color: lavender;
+        }
+
+
+        input {
+            width: 90%;
+            padding: 10px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            font-size: 16px;
+            
+        }
+
+        input:hover {
+
+            background-color: lightyellow;
+            transition: 0.5s ease;
+            transform:translateX(5px);
+                transform:scale(1.02);
+                transform:skewX(1deg);
+        }
+
+        input:focus {
+
+            background-color: lightblue;
+            border-color: blue;
+            outline: none;
+            transform:translateX(8px);
+                transform:scale(1.03);
+        }
+
+        .buttonx {
+
+            width: 100%;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+
+            background-color: purple;
+
+            transform:translateY(-5px) scale(1.05) skew(-2deg);
+                
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <div class="cont">
+
+        <form>
+
+            <table>
+
+                <tr>
+                    <td>Name</td>
+
+                    <td>
+                        <input type="text"
+                               name="name"
+                               placeholder="Enter your name">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Age</td>
+
+                    <td>
+                        <input type="number"
+                               name="age"
+                               placeholder="Enter your age">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Email</td>
+
+                    <td>
+                        <input type="email"
+                               name="email"
+                               placeholder="Enter your email">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Password</td>
+
+                    <td>
+                        <input type="password"
+                               name="password"
+                               placeholder="Enter password">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Confirm Password</td>
+
+                    <td>
+                        <input type="password"
+                               name="confirm-password"
+                               placeholder="Confirm password">
+                    </td>
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <input class="buttonx" type="submit"
+                               value="Register">
+                    </td>
+
+                    <td>
+                        <input class="buttonx" type="reset"
+                               value="Reset">
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </form>
+
+    </div>
+</body>
+</html>

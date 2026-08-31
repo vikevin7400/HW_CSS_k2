@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q9</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        nav{
+            position: sticky;
+            top: 0px;
+
+            background-color: rgba(26, 83, 144, 0.99);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 123%;
+            padding: 20px;
+            
+
+        }
+        a{
+            color: white;
+            font-size: medium;
+            text-decoration: none;
+            font-family: "Sekuya ", system-ui;
+            text-align: center;
+           
+            
+            
+            
+        }
+        main{
+            padding-left: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+
+            <a href="">Home</a>
+            <a href="">Jobs</a>
+            <a href="">Companies</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+
+        <section class="hero">
+            <h2>Find Your Dream JOb</h2>
+            <p>Search thousands of jobs from top company 
+                and build your career.
+            </p>
+            <form action="jobs.html" method="get">
+                <input type="search" name="keyword" placeholder="JOb title">
+                <input type="text"name="location" placeholder="location">
+                <button type="submit">Search Jobs</button>
+            </form>
+        
+        </section>
+        <section class="categories">
+            <h2>Popular Jobs Categories</h2>
+            <article>
+                <h3>Software Development</h3>
+                <p>1,250 Jobs</p>
+                <a href="jobs.html?category=development">view Jobs</a>
+            </article>
+
+            <article>
+                <h3>Marketing</h3>
+                <p>850 Jobs</p>
+                <a href="jobs.html?category=marketing">View Jobs</a>
+            </article>   
+            <article>
+                <h3>UI/UX Design</h3>
+                <p>500 Jobs</p>
+                <a href="jobs.html?category=design">view Jobs</a>
+            </article>
+        </section>
+        <section class="featured-jobs">
+              <h2>Featured Jobs</h2>
+
+              <article class="job-card">
+                <h3>Java Developer</h3>
+                <p>
+                    <strong>ABC Technologies</strong>
+
+                </p>
+                <p>
+                    Mumbai | Full Time || &#8377;6 LPA
+                </p>
+                <p>We are looking for a Java Developer
+                    with knowledge of Java,SQl and Spring Boot.
+                </p>
+                <a href="job-details.html">View details</a>
+              </article>
+              <article class="job-card">
+                <h3>Frontend Developer</h3>
+                <p>
+                    <strong>XYZ Technologies</strong>
+
+                </p>
+                <p>
+                    Pune | Full Time || &#8377;5 LPA
+                </p>
+                <p>looking for a Frontend Developer
+                    with HTML,CSS and Javascript skills.
+                </p>
+                <a href="job-details.html">View details</a>
+              </article>
+        </section>
+         <section>
+            <h1>About JobConnect</h1>
+            <p>Connecting talented people with great companies</p>
+        </section>
+        <section>
+            <h2> Our Story </h2>
+            <p>JobConnect was founded in 2020 by a group of students who wanted to create a platform that would connect them with companies that they would love to work for. We wanted to make it easy for people to find jobs and companies that they would be interested in. We believe that everyone deserves a platform to connect with people and companies that they are passionate about.</p>
+            <p>Over the years, we have adapted to the changing needs of the modern workforce. We use smart matching tools to ensure that job seekers find roles that truly fit their skills and goals. At the same time, we help employers save time by introducing them to highly qualified candidates quickly. We believe that finding a great job should be a smooth and encouraging journey.</p>
+
+        </section>
+
+    
+    </main>
+
+</body>
+</html>

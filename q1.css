@@ -1,0 +1,48 @@
+.container1{
+    background-color: red;
+    width: 250px;
+    height: 100px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    
+     outline: 10px solid turquoise;
+     outline-style:outset;
+}
+.container2{
+    background-color: rgb(92, 92, 245);
+    width: 350px;
+    height: 100px;
+    padding-top: 10px;
+    margin-left: 38%;
+    margin-right: 40%;
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+     outline: 15px solid yellow;
+    outline-style:groove; 
+}
+.container3{
+    background-color: green;
+    width: 400px;
+    height: 100px;
+    padding-top: 15px;
+    margin-left: 36%;
+    margin-right: 47%;
+    margin-top: 50px;    
+    font-family: 'Times New Roman', Times, serif;
+    outline: 8px solid black;
+    outline-style:double;
+    
+}   
+
+h2{
+    align-content: center;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}

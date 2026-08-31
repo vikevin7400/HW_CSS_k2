@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>q17</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-news {
+            background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA2ak0Ao.img?w=1012&h=569&m=6");
+            background-size: cover;
+                        height: 350px;
+            margin: 20px;
+            padding: 30px;
+            color: white;
+            position: relative;
+        }
+
+        .main-news-content {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            padding: 20px;
+
+            width: 60%;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+         p {
+            font-size: 18px;
+        }
+
+        .news-container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            background-position: center;
+            margin: 20px;
+        }
+
+
+        .news-card {
+            background-color: white;
+
+            width: 300px;
+            height: 300px;
+
+            padding: 20px;
+            border: 3px solid black;
+            margin: 10px;
+
+            box-sizing: border-box;
+        }
+
+
+        .card1 {
+            background-image: url("news2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card2 {
+            background-image: url("news3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card3 {
+            background-image: url("news4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    h2, p {
+            color: white;
+            background-color: gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Daily News</h1>
+    </header>
+
+    <section class="main-news">
+        <div class="main-news-content">
+            <h1>Breaking News: Technology Changes the Future</h1>
+            <p>
+                Discover the latest developments and news
+                happening around the world.
+            </p>
+        </div>
+    </section>
+    <section class="news-container">
+        <div class="news-card card1">
+            <h2>Sports News</h2>
+            <p>
+                Latest updates from the world of sports.
+            </p>
+        </div>
+
+        <div class="news-card card2">
+            <h2>Technology News</h2>
+            <p>
+                Discover the latest technology updates.
+            </p>
+        </div>
+        <div class="news-card card3">
+            <h2>World News</h2>
+            <p>
+                Important news from around the world.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

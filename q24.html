@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>q24</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background-color: lightgray;
+        }
+
+
+       
+
+        nav {
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url("https://media.istockphoto.com/id/178447404/photo/modern-business-buildings.jpg?s=612x612&w=0&k=20&c=MOG9lvRz7WjsVyW3IiQ0srEzpaBPDcc7qxYsBCvAUJs=");
+            background-size: cover;
+            background-position: center;
+
+            height: 500px;
+
+            position: relative;
+        }
+
+        .hero-content {
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            width: 60%;
+        }
+
+         h1 {
+            font-family: Georgia, serif;
+            font-size: 45px;
+            font-weight: bold;
+
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+         p {
+            font-size: 20px;
+            
+        }
+
+         button {
+            padding: 12px 25px;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+
+            font-size: 18px;
+        }
+
+
+        .about {
+            background-color: white;
+
+            margin: 30px;
+            padding: 30px;
+            text-align: center;
+            border: 2px solid gray;
+        }
+
+         h2 {
+            font-family: Georgia, serif;
+            font-size: 35px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+         p {
+            font-size: 18px;
+        }
+
+        .services {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .services h2 {
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+
+        .service-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            gap: 20px;
+        }
+
+
+       
+
+        .service-card {
+            background-color: white;
+            width: 250px;
+            padding: 25px;
+            margin: 10px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .service-card h3 {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            color: blueviolet;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+
+        
+
+        @media (max-width: 800px) {
+
+            .service-container {
+                flex-wrap: wrap;
+            }
+
+            .service-card {
+                width: 300px;
+            }
+
+            .hero-content {
+                width: 70%;
+            }
+
+        }
+
+
+        
+
+        @media (max-width: 500px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero {
+                height: 600px;
+
+                
+
+                background-image: url("https://static.vecteezy.com/system/resources/thumbnails/071/137/144/small/corporate-meeting-in-modern-office-setting-with-participants-engaged-in-discussion-photo.jpg");
+            }
+
+            .hero-content {
+                width: 75%;
+                padding: 20px;
+            }
+
+             h1 {
+                font-size: 30px;
+            }
+
+             p {
+                font-size: 16px;
+            }
+
+            .service-container {
+                flex-direction: column;
+            }
+
+            .service-card {
+                width: 80%;
+            }
+
+            .about {
+                margin: 15px;
+                padding: 20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+
+    </nav>
+    </header>
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to Tech Solutions</h1>
+
+            <p>
+                We provide modern technology solutionsto help your business grow.
+            </p>
+
+            <button>Learn More</button>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Tech Solutiozns is a company that provide innovative and reliable technology services
+            for businesses and individuals.
+        </p>
+
+    </section>
+
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>
+                    We create modern and responsive websites for your business.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Software Development</h3>
+
+                <p>
+                    We build software solutions based on your business requirements.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>Technical Support</h3>
+
+                <p>
+                    We provide technical support and solutions for your business.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+</body>
+</html>

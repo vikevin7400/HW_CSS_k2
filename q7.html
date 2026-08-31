@@ -1,0 +1,142 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> q7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Playwrite+VN:wght@100..400&family=Sekuya&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+        }
+        nav{
+            padding: 20px;
+            background-color: rgba(144, 26, 50, 0.99);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 123%;
+            
+
+        }
+        a{
+            color: white;
+            font-size: medium;
+            text-decoration: none;
+            font-family: "Sekuya ", system-ui;
+            text-align: center;
+           
+            
+            
+            
+        }
+        .course-cont{
+            padding-top: 10px;
+            border: 2px solid rgba(144, 26, 50, 0.2);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            margin-left: 10px;
+
+            gap: 10px;
+      
+            
+            
+        }
+        .course-cardimg{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+              object-fit: cover;
+             border: 3px solid rgba(144, 26, 50, 0.2); 
+             border-radius: 8px; 
+             outline: 2px solid rgba(144, 26, 50, 0.2);
+            background-color:rgb(26, 11, 11);
+
+        }
+        .course-desc{
+
+            padding: 10px;
+
+            font-family: "Sekuya ", system-ui;
+            font-size: medium;
+            color: rgba(233, 104, 130, 0.99);
+            text-align: center;
+
+
+        }
+        @media(max-width:1200px){
+            .course-cont {
+                display: flex;
+                flex-wrap: wrap; 
+                justify-content: center; 
+                gap: 20px;
+            }
+            
+            .course-cardimg {
+                max-width: 450px; 
+            }
+        }
+
+        @media(max-width: 700px) {
+            nav {
+                
+                flex-wrap: wrap;
+                gap: 10px;
+                width: auto;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a class="ref" href="">Home</a>
+        <a class="ref"href="">About</a>
+        <a class="ref"href="">Contact</a>
+        <a class="ref"href="">Login</a>
+        <a class="ref"href="">Register</a>
+
+    </nav>
+
+    <div class="course-cont">
+
+        <div class="course-cardimg">
+                    <img src="https://pbs.twimg.com/media/HNcsREbWYAAH8CK.jpg" height="280px" width="500px"alt="forza-horizon">
+            <div class="course-desc">
+                    <p>Drive hundreds of real cars. 
+                        Explore a massive map of Mexico. Race through deserts, jungles, and ruined cities. 
+                        Join friends online for events.</p>
+            </div >
+                    
+        </div>
+
+        <div class="course-cardimg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXIRBbRxT55ZetH8mkULCKdgD4T_fAqFBF-IzXKjJSg6Y6ck2xF5XIRUFW&s=10 " height="280px" width="500px" alt="valorant">
+            <div class="course-desc">
+                <p> Play as Peter Parker and Miles Morales. Fight villains like Venom and Kraven. Swing fast through a big New York City. Switch heroes at any time.</p>
+            </div >
+        </div>
+        
+        <div class="course-cardimg">
+                <img src="https://i.ytimg.com/vi/rm61FMyMjbA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAJrWhcq96hGslBu7_nbkvK4hurFw" height="280px" width="500px" alt="spiderman">
+            <div class="course-desc">
+                    <p> Play 5v5 matches with two teams. Attack or defend sites on a map. Pick agents with unique magical powers and guns. Aim well and win rounds.</p>
+            </div >
+        </div>
+
+        <div class="course-cardimg">
+                <img src="https://i.ytimg.com/vi/rm61FMyMjbA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAJrWhcq96hGslBu7_nbkvK4hurFw" height="280px" width="500px" alt="spiderman">
+            <div class="course-desc">
+                    <p> Play 5v5 matches with two teams. Attack or defend sites on a map. Pick agents with unique magical powers and guns. Aim well and win rounds.</p>
+            </div >
+        </div>
+    </div>
+
+</body>
+</html>
